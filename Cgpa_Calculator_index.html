@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Cgpa_Calculator_styles.css">
+  <title>SPPU CGPA Calculator</title>
+</head>
+<body>
+  <div class="calculator-box">
+    <h1>CGPA Calculator</h1>
+    <form id="cgpaForm">
+      <div class="input-group">
+        <label for="numSubjects">Number of Subjects:</label>
+        <input type="number" id="numSubjects" min="1" required>
+      </div>
+      <div id="subjectInputs">
+        <!-- Input fields for earned credits and grades will be dynamically added here -->
+      </div>
+      <button type="button" onclick="addSubjectFields()">Add Subject</button>
+      <button type="button" onclick="calculateCGPA()">Calculate CGPA</button>
+      <p id="cgpaResult"></p>
+    </form>
+  </div>
+  <script src="Cgpa_Calculator_script.js"></script>
+</body>
+</html>
